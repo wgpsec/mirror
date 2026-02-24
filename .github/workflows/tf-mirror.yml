@@ -33,7 +33,7 @@ jobs:
 
       - name: Fetch and Mirror All Versions
         run: |
-          mkdir -p public/tf-mirror
+          mkdir -p public/terraform
           
           # 定义需要同步的插件列表
           PROVIDERS=(
