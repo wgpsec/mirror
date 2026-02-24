@@ -57,7 +57,7 @@ jobs:
             
             for VERSION in $VERSIONS; do
               # 检查该版本是否已经存在于本地缓存中。如果有 .zip 文件，直接跳过下载！
-              TARGET_DIR="../public/tf-mirror/registry.terraform.io/${NAMESPACE}/${NAME}/${VERSION}"
+              TARGET_DIR="../public/terraform/registry.terraform.io/${NAMESPACE}/${NAME}/${VERSION}"
               if [ -d "$TARGET_DIR" ] && ls "$TARGET_DIR"/*.zip >/dev/null 2>&1; then
                 echo "⏭️  Skipped: $PROVIDER v$VERSION already exists. Moving to next."
                 continue
@@ -90,7 +90,7 @@ jobs:
                 -platform=windows_amd64 \
                 -platform=darwin_amd64 \
                 -platform=darwin_arm64 \
-                ../public/tf-mirror > /dev/null 2>&1 || true
+                ../public/terraform > /dev/null 2>&1 || true
                 
               cd ..
               rm -rf run_tmp
@@ -251,5 +251,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          keep_files: true
+          keep_files: false
           commit_message: "Mirror: Sync latest versions & rebuild index"
