@@ -26,7 +26,7 @@
     <h1>Terraform Provider Mirror</h1>
     <div class="status">
         <p><strong>Method:</strong> Native CLI (Incremental Sync)</p>
-        <p><strong>Last Updated:</strong> 2026-02-24 04:37:58 UTC</p>
+        <p><strong>Last Updated:</strong> 2026-02-24 04:49:57 UTC</p>
         <p><strong>Mirror URL:</strong> <code>https://mirror.wgpsec.org/terraform/</code></p>
     </div>
 
@@ -37,19 +37,81 @@ provider_installation {
   network_mirror {
     url = "https://mirror.wgpsec.org/terraform/"
     include = [
-      
+      "registry.terraform.io/hashicorp/archive",
+                "registry.terraform.io/hashicorp/external",
+                "registry.terraform.io/hashicorp/http",
+                "registry.terraform.io/hashicorp/local",
+                "registry.terraform.io/hashicorp/null",
+                "registry.terraform.io/hashicorp/random",
+                "registry.terraform.io/hashicorp/time",
+                "registry.terraform.io/hashicorp/tls"
     ]
   }
   direct {
     exclude = [
-      
+      "registry.terraform.io/hashicorp/archive",
+                "registry.terraform.io/hashicorp/external",
+                "registry.terraform.io/hashicorp/http",
+                "registry.terraform.io/hashicorp/local",
+                "registry.terraform.io/hashicorp/null",
+                "registry.terraform.io/hashicorp/random",
+                "registry.terraform.io/hashicorp/time",
+                "registry.terraform.io/hashicorp/tls"
     ]
   }
 }</pre>
 
-    <h2>Synced Providers (0)</h2>
+    <h2>Synced Providers (8)</h2>
     <div class="grid">
         
+    <div class="card">
+        <div class="name">hashicorp/archive</div>
+        <div class="latest">Latest: v2.7.1-alpha1</div>
+        <div class="version-list"><span class="ver-tag">v2.7.1-alpha1</span><span class="ver-tag">v2.7.1</span><span class="ver-tag">v2.7.0</span><span class="ver-tag">v2.6.0</span><span class="ver-tag">v2.5.0</span></div>
+    </div>
+    
+    <div class="card">
+        <div class="name">hashicorp/external</div>
+        <div class="latest">Latest: v2.3.5-alpha1</div>
+        <div class="version-list"><span class="ver-tag">v2.3.5-alpha1</span><span class="ver-tag">v2.3.5</span><span class="ver-tag">v2.3.4</span><span class="ver-tag">v2.3.3</span><span class="ver-tag">v2.3.2</span></div>
+    </div>
+    
+    <div class="card">
+        <div class="name">hashicorp/http</div>
+        <div class="latest">Latest: v3.5.0</div>
+        <div class="version-list"><span class="ver-tag">v3.5.0</span><span class="ver-tag">v3.4.5</span><span class="ver-tag">v3.4.4</span><span class="ver-tag">v3.4.3</span><span class="ver-tag">v3.4.2</span></div>
+    </div>
+    
+    <div class="card">
+        <div class="name">hashicorp/local</div>
+        <div class="latest">Latest: v2.7.0</div>
+        <div class="version-list"><span class="ver-tag">v2.7.0</span><span class="ver-tag">v2.6.2</span><span class="ver-tag">v2.6.1</span><span class="ver-tag">v2.6.0</span><span class="ver-tag">v2.5.3</span></div>
+    </div>
+    
+    <div class="card">
+        <div class="name">hashicorp/null</div>
+        <div class="latest">Latest: v3.2.4-alpha.2</div>
+        <div class="version-list"><span class="ver-tag">v3.2.4-alpha.2</span><span class="ver-tag">v3.2.4</span><span class="ver-tag">v3.2.3</span><span class="ver-tag">v3.2.2</span><span class="ver-tag">v3.2.1</span></div>
+    </div>
+    
+    <div class="card">
+        <div class="name">hashicorp/random</div>
+        <div class="latest">Latest: v3.8.1</div>
+        <div class="version-list"><span class="ver-tag">v3.8.1</span><span class="ver-tag">v3.8.0</span><span class="ver-tag">v3.7.2</span><span class="ver-tag">v3.7.1</span><span class="ver-tag">v3.7.0-alpha1</span></div>
+    </div>
+    
+    <div class="card">
+        <div class="name">hashicorp/time</div>
+        <div class="latest">Latest: v0.13.1-alpha1</div>
+        <div class="version-list"><span class="ver-tag">v0.13.1-alpha1</span><span class="ver-tag">v0.13.1</span><span class="ver-tag">v0.13.0</span><span class="ver-tag">v0.12.1</span><span class="ver-tag">v0.12.0</span></div>
+    </div>
+    
+    <div class="card">
+        <div class="name">hashicorp/tls</div>
+        <div class="latest">Latest: v4.2.1</div>
+        <div class="version-list"><span class="ver-tag">v4.2.1</span><span class="ver-tag">v4.2.0</span><span class="ver-tag">v4.1.0</span><span class="ver-tag">v4.0.6</span><span class="ver-tag">v4.0.5</span></div>
+    </div>
+    
     </div>
 
     <footer>
